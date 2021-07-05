@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class CollectAngels : MonoBehaviour
 {
-    public int devilryLevel = 3;
+    
+    // public ChangeDevilry Devilryness;
 
     // public void Start()
     // {
@@ -18,6 +19,10 @@ public class CollectAngels : MonoBehaviour
     // {
     //     //ChangeDevilryLevel();
     // }
+    // private void Awake()
+    // {
+    //     Devilryness = ;
+    // }
 
     public void FixedUpdate()
     {
@@ -27,7 +32,8 @@ public class CollectAngels : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            devilryLevel--;
+            // GetComponent<ChangeDevilry>().devilryLevel--;
+            // üst satırda devilryLeveli değiştirip azalt, diğer scriptten erişmenin yolunu bul
             Destroy(gameObject);
         } else if (other.CompareTag("DestroyArea"))
         {

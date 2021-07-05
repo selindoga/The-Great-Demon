@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class ChangeDevilry : MonoBehaviour
 {
-    public CollectAngels Devilryness;
+    public int devilryLevel = 3;
+    
     
     public TextMeshProUGUI level;
 
@@ -16,10 +17,7 @@ public class ChangeDevilry : MonoBehaviour
         //Devilryness.level = GetComponent<TextMeshProUGUI>();
     //}
 
-    private void Awake()
-    {
-        Devilryness = GetComponent<CollectAngels>();
-    }
+    
 
     void Update()
     {
@@ -28,18 +26,18 @@ public class ChangeDevilry : MonoBehaviour
 
     public void Check()
     {
-        if (Devilryness.devilryLevel == 3)
+        if (devilryLevel == 3)
         {
             level.text = "Real Demon!";
         }
-        else if (Devilryness.devilryLevel == 2)
+        else if (devilryLevel == 2)
         {
             level.text = "Looks like a fake demon..";
         }
-        else if (Devilryness.devilryLevel == 1)
+        else if (devilryLevel == 1)
         {
             level.text = "Your devilry is Fake!";
-        }else if (Devilryness.devilryLevel <= 0)
+        }else if (devilryLevel <= 0)
         {
             level.text = "You are too good to win!";
         }

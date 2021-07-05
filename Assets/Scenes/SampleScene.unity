@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776515f585713354ca88d574d9352fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Devilryness: {fileID: 0}
+  devilryLevel: 3
   level: {fileID: 1972895277}
 --- !u!4 &400584021
 Transform:

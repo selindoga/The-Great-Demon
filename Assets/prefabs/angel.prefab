@@ -142,5 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6696ab6cc3d1cd54d94efc71455a09b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: {fileID: 0}
   devilryLevel: 3
