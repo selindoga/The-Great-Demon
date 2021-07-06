@@ -8,21 +8,13 @@ using UnityEngine.UI;
 public class ChangeDevilry : MonoBehaviour
 {
     public int devilryLevel = 3;
-    
-    
     public TextMeshProUGUI level;
-
-    //void Start()
-    //{
-        //Devilryness.level = GetComponent<TextMeshProUGUI>();
-    //}
-
     
-
-    void Update()
+    public void DecreaseDevilryLevel()
     {
+        devilryLevel--;
         Check();
-    }
+    } 
 
     public void Check()
     {
